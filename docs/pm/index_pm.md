@@ -6,7 +6,7 @@ PM files coordinate execution. They track milestones, tasks, subtasks, acceptanc
 
 | Area | Status | Notes |
 | --- | --- | --- |
-| Phase 1 | Not yet decomposed into PM files | Phase 1 epics should be written first. Each PM milestone must be a testable bundle with human-visible evidence. |
+| Phase 1 | Epics drafted; PM pending | Start PM with [Epic 00: Workbench and Evidence Loop](../epics/epic00/p1-e00-workbench-and-evidence-loop.md), then proceed depth-first through the [Phase 1 overview](../epics/p1-overview.md). |
 | Phase 1.5 | Deferred | The [Rust SNES Emulator Showcase](../epics/phase-1-5-rust-snes-emulator-showcase.md) has epic-level scope only. Execution PM starts after Phase 1 prerequisites exist. |
 | Phase 2 | Deferred | No active PM. |
 | Phase 3 | Deferred | No active PM. |

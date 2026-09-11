@@ -2,7 +2,7 @@
 
 Aaronix is a Rust-first implementation of MINIX, built as close as practical to the original source and intent while using idiomatic Rust for safety, clarity, testability, and teaching value.
 
-The project is currently in documentation and Phase 1 planning. The immediate goal is to define the smallest bootable, testable, human-visible OS path before Rust implementation begins.
+The project is currently in documentation and Phase 1 planning. The immediate goal is to turn the Phase 1 epic sequence into execution PM, starting with the development workbench and evidence loop.
 
 ## Project Direction
 
@@ -12,7 +12,7 @@ Current phase map:
 
 | Phase | Scope |
 | --- | --- |
-| Phase 1 | Basic MINIX-inspired OS foundation. |
+| Phase 1 | Basic MINIX-inspired OS foundation, organized as a depth-first boot-to-shell learning sequence. |
 | Phase 1.5 | Rust SNES emulator showcase as a userspace/demo product, Linux-first, no bundled commercial ROMs. |
 | Phase 2 | Linux binary compatibility. |
 | Phase 3 | Native Windows executable runtime. |
@@ -24,11 +24,12 @@ Read these in order before coding:
 
 1. [Project vision](docs/vision.md)
 2. [Engineering mandate](docs/Engineering.md)
-3. [Development environment setup](docs/setup/development-environment.md)
-4. [Test environment setup](docs/setup/test-environment.md)
-5. [Architecture Decision Records](docs/arch/adrs/index_adrs.md)
-6. [Epics](docs/epics/index_epics.md)
-7. [Project management](docs/pm/index_pm.md)
+3. [Phase 1 overview](docs/epics/p1-overview.md)
+4. [Development environment setup](docs/setup/development-environment.md)
+5. [Test environment setup](docs/setup/test-environment.md)
+6. [Architecture Decision Records](docs/arch/adrs/index_adrs.md)
+7. [Epics](docs/epics/index_epics.md)
+8. [Project management](docs/pm/index_pm.md)
 
 ## How To Start Coding
 
@@ -54,15 +55,16 @@ The project owner writes the Rust implementation. Assistants collaborate through
 | [docs/setup/](docs/setup/index_setup.md) | Development setup, test setup, and emulator evidence collection. |
 | [docs/arch/](docs/arch/index_arch.md) | Architecture index, ADRs, diagrams, and resources. |
 | [docs/epics/](docs/epics/index_epics.md) | Concept and design breakdown by phase. |
+| [docs/epics/p1-overview.md](docs/epics/p1-overview.md) | Phase 1 depth-first learning sequence. |
 | [docs/pm/](docs/pm/index_pm.md) | Milestones, tasks, subtasks, and acceptance state. |
 | [docs/research/](docs/research/index_research.md) | MINIX source study, tradeoffs, licensing, and experiments. |
 | [docs/resources/](docs/resources/index_resources.md) | Project-wide resources, including the MINIX book PDF. |
 
 ## Current Status
 
-The repository currently contains the documentation spine and initial ADRs. Phase 1 epics are the next planned design step.
+The repository currently contains the documentation spine, initial ADRs, setup docs, and Phase 1 epic sequence. Phase 1 PM is the next planned step, beginning with [Epic 00: Workbench and Evidence Loop](docs/epics/epic00/p1-e00-workbench-and-evidence-loop.md).
 
-There is not yet a committed Rust workspace, boot target, bootloader decision, emulator command, or CI contract. Those decisions should be made in Phase 1 bootstrapping ADRs and epics.
+There is not yet a committed Rust workspace, boot target, bootloader decision, emulator command, or CI contract. Those decisions should be made in Phase 1 bootstrapping ADRs and PM milestones.
 
 ## License And Asset Note
 

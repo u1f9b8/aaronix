@@ -59,6 +59,7 @@ Relevant ADRs:
 - [ADR-0003 - Kernel, Userspace, and Tooling Boundaries](arch/adrs/0003-kernel-userspace-and-tooling-boundaries.md)
 - [ADR-0005 - Boundary Type Separation Policy](arch/adrs/0005-boundary-type-separation-policy.md)
 - [ADR-0009 - Explicit and Versioned ABI Boundaries](arch/adrs/0009-explicit-and-versioned-abi-boundaries.md)
+- [ADR-0013 - Depth-First Phase 1 Learning Sequence](arch/adrs/0013-depth-first-phase-1-learning-sequence.md)
 
 ## 3. Rust-First Systems Rules
 
@@ -83,6 +84,7 @@ Aaronix is not a mechanical C-to-Rust translation. Before implementing a subsyst
 Translation guidance:
 
 - C `#define` constants become Rust `const`, enums, bitflags, or newtypes depending on meaning.
+- Do not pre-port constants, structs, headers, or macros that the current milestone does not use.
 - C structs used for binary layout become dedicated layout structs, not general kernel domain types.
 - C structs used for internal state become Rust types with constructors and invariants where useful.
 - C macros become functions, methods, const functions, or typed wrappers when possible.
@@ -103,6 +105,8 @@ The project advances in ordered phases:
 - **Phase 4:** minimal visual GUI.
 
 Phase 1 is the active focus. Later phases may influence boundary choices, but they must not pull premature implementation work into Phase 1.
+
+Phase 1 follows a depth-first learning sequence. Each epic should be short-coded, practical, and course-friendly: one concept, one small implementation surface, one visible result, and one unlock for the next lesson.
 
 Every milestone must answer:
 
@@ -126,9 +130,10 @@ Rules:
 - Exact build, emulator, and test commands belong in PM files once the relevant Phase 1 epic chooses them.
 - Tool choices should be pinned in source-controlled files when implementation begins.
 
-Relevant ADR:
+Relevant ADRs:
 
 - [ADR-0012 - Development, Test, and Virtualization Evidence Environment](arch/adrs/0012-development-test-and-virtualization-evidence-environment.md)
+- [ADR-0013 - Depth-First Phase 1 Learning Sequence](arch/adrs/0013-depth-first-phase-1-learning-sequence.md)
 
 ## 7. Testing Mandate
 

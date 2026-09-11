@@ -20,6 +20,7 @@ Aaronix is an OS project, not a web application or enterprise AI service. The AD
 | [ADR-0010](0010-supervision-and-restart-semantics.md) | Supervision and Restart Semantics | Argaile ADR-0068 and ADR-0115 | Preserved restart/supervision thinking but scoped it to MINIX-style servers, process lifecycle, and later phase compatibility runtimes. |
 | [ADR-0011](0011-rust-snes-emulator-showcase-phase-1-5.md) | Rust SNES Emulator Showcase for Phase 1.5 | New Aaronix decision | Adds Phase 1.5 scope for a Rust-from-scratch userspace SNES emulator, Linux-first, with no bundled commercial ROMs. |
 | [ADR-0012](0012-development-test-and-virtualization-evidence-environment.md) | Development, Test, and Virtualization Evidence Environment | New Aaronix decision | Adds root README, setup docs, test environment expectations, and a virtualization evidence loop for PM and analysis. |
+| [ADR-0013](0013-depth-first-phase-1-learning-sequence.md) | Depth-First Phase 1 Learning Sequence | New Aaronix decision | Makes Phase 1 a course-friendly sequence where each epic adds only currently used code, constants, types, and tests. |
 
 ## Argaile ADRs Left Behind
 

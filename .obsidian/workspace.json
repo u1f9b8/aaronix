@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/arch/adrs/0001-record-architecture-decisions.md",
+                "file": "docs/epics/epic01/p1-e01-bootable-rust-kernel-skeleton.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0001-record-architecture-decisions"
+              "title": "p1-e01-bootable-rust-kernel-skeleton"
             }
           },
           {
@@ -115,7 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 395.5
   },
   "right": {
     "id": "dfcac35da3a9715e",
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/arch/adrs/0001-record-architecture-decisions.md",
+                "file": "docs/epics/epic01/p1-e01-bootable-rust-kernel-skeleton.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/arch/adrs/0001-record-architecture-decisions.md",
+                "file": "docs/epics/epic01/p1-e01-bootable-rust-kernel-skeleton.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -193,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/arch/adrs/0001-record-architecture-decisions.md",
+                "file": "docs/epics/epic01/p1-e01-bootable-rust-kernel-skeleton.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -222,41 +222,41 @@
   },
   "active": "8307ebeb51e7b548",
   "lastOpenFiles": [
-    "docs/pm/resources/index_pm_resources.md.new",
-    "docs/Engineering.md.new",
-    "docs/vision.md.new",
-    "docs/arch/adrs/0001-record-architecture-decisions.md",
-    "releases/releases_index.md",
-    "docs/pm/index_pm.md.new",
-    "docs/readme.md.new",
-    "docs/arch/adrs/index_adrs.md.new",
-    "docs/pm/resources/milestone-evidence-template.md.new",
-    "docs/arch/adrs/0012-development-test-and-virtualization-evidence-environment.md",
-    "docs/pm/resources/milestone-evidence-template.md",
-    "docs/setup/resources/index_setup_resources.md",
+    "docs/epics/epic00/p1-e00-workbench-and-evidence-loop.md",
     "docs/setup/virtualization-evidence-loop.md",
-    "docs/setup/test-environment.md",
-    "docs/setup/development-environment.md",
-    "docs/setup/index_setup.md",
-    "README.md",
-    "docs/setup/resources",
-    "docs/setup",
-    "docs/vision.md",
-    "docs/arch/index_arch.md",
-    "docs/readme.md",
-    "docs/Engineering.md",
-    "docs/arch/adrs/index_adrs.md",
-    "docs/arch/adrs/0011-rust-snes-emulator-showcase-phase-1-5.md",
-    "docs/arch/adrs/0011-rust-snes-emulator-showcase-phase-1-5.md.new",
-    "docs/research/index_research.md.new",
-    "docs/research/resources/index_research_resources.md",
-    "docs/pm/resources/index_pm_resources.md",
-    "docs/epics/resources/index_epic_resources.md",
-    "docs/arch/resources/index_arch_resources.md",
-    "docs/arch/diagrams/index_diagrams.md",
-    "docs/resources/index_resources.md",
-    "docs/epics/phase-1-5-rust-snes-emulator-showcase.md",
-    "docs/epics/index_epics.md",
-    "docs/arch/adrs/0004-simulation-and-test-double-discipline.md"
+    "docs/epics/p1-overview.md.new",
+    "docs/epics/index_epics.md.new",
+    "XXBeRF6E",
+    "XXNNQ1v8",
+    "docs/epics/epic11/p1-e11-phase-1-capstone.md",
+    "docs/epics/epic08/p1-e08-minix-style-ipc-seed.md",
+    "docs/epics/epic10/p1-e10-init-shell-and-tiny-commands.md",
+    "docs/epics/epic09/p1-e09-tiny-filesystem-and-program-image.md",
+    "docs/epics/epic07/p1-e07-user-mode-and-first-syscall.md",
+    "docs/epics/epic06/p1-e06-first-task-model-and-scheduler.md",
+    "docs/epics/epic05/p1-e05-interrupts-clock-and-kernel-pulse.md",
+    "docs/epics/epic04/p1-e04-frame-allocation-basics.md",
+    "docs/epics/epic03/p1-e03-boot-data-and-memory-map.md",
+    "docs/epics/epic02/p1-e02-visible-kernel-output.md",
+    "docs/epics/p1-overview.md",
+    "docs/epics/epic01/p1-e01-bootable-rust-kernel-skeleton.md",
+    "docs/epics/epic11",
+    "docs/epics/epic10",
+    "docs/epics/epic09",
+    "docs/epics/epic08",
+    "docs/epics/epic07",
+    "docs/epics/epic06",
+    "docs/epics/phase-1-epic-11-phase-1-capstone.md",
+    "docs/epics/phase-1-epic-10-init-shell-and-tiny-commands.md",
+    "docs/epics/phase-1-epic-09-tiny-filesystem-and-program-image.md",
+    "docs/epics/phase-1-epic-08-minix-style-ipc-seed.md",
+    "docs/epics/phase-1-epic-07-user-mode-and-first-syscall.md",
+    "docs/epics/phase-1-epic-06-first-task-model-and-scheduler.md",
+    "docs/epics/phase-1-epic-05-interrupts-clock-and-kernel-pulse.md",
+    "docs/epics/phase-1-epic-04-frame-allocation-basics.md",
+    "docs/epics/phase-1-epic-03-boot-data-and-memory-map.md",
+    "docs/epics/phase-1-epic-02-visible-kernel-output.md",
+    "docs/epics/phase-1-epic-01-bootable-rust-kernel-skeleton.md",
+    "docs/epics/phase-1-epic-00-workbench-and-evidence-loop.md"
   ]
 }

@@ -29,11 +29,13 @@ Every planning step should ask:
 
 This principle controls Phase 1 more than completeness does. The first version should be small, bootable, inspectable, and honest about what it does not yet decide.
 
+Phase 1 must be a learning journey. Each step should be practical and short-coded enough for the owner to type, understand, test, and explain. Aaronix should not pre-port broad MINIX header files, constant catalogs, syscall tables, or unused future scaffolding. Code appears when the current milestone uses it.
+
 ## Phases
 
 | Phase | Scope | Status |
 | --- | --- | --- |
-| Phase 1 | Basic MINIX-inspired OS foundation: boot path, kernel visibility, low-level output/input, memory foundations, process foundations, IPC direction, minimal userspace, and a shell-like human-visible loop. | Current focus. To be split into epics next. |
+| Phase 1 | Basic MINIX-inspired OS foundation: workbench, boot path, kernel visibility, memory foundations, process foundations, IPC direction, minimal userspace, and a shell-like human-visible loop. | Current focus. The depth-first epic sequence is drafted in the [Phase 1 overview](epics/p1-overview.md). |
 | Phase 1.5 | Rust SNES emulator showcase as a userspace/demo product. Linux-first standalone binary, later Aaronix-native adapter when Phase 1 exposes the required runtime surfaces. No bundled commercial ROMs. | Scoped by [ADR-0011](arch/adrs/0011-rust-snes-emulator-showcase-phase-1-5.md) and [Phase 1.5 epic scope](epics/phase-1-5-rust-snes-emulator-showcase.md). Deferred until Phase 1 can support it. |
 | Phase 2 | Leverage the distributed base of Linux and enable Aaronix to run Linux binaries locally. | Deferred. Phase 1 should keep ABI boundaries explicit so this remains possible. |
 | Phase 3 | Implement a native Windows executable runtime for the Aaronix environment, similar in ambition to WSL-style launch integration but in the opposite compatibility direction. | Deferred. Requires Phase 2-level ABI discipline and executable/runtime design. |
@@ -51,8 +53,8 @@ This principle controls Phase 1 more than completeness does. The first version s
 | Architecture | [arch/index_arch.md](arch/index_arch.md) | Architecture entry point, including ADRs and diagrams. |
 | ADRs | [arch/adrs/index_adrs.md](arch/adrs/index_adrs.md) | Architecture decisions, adapted from reusable Argaile discipline and rewritten for Aaronix where applicable. |
 | Diagrams | [arch/diagrams/index_diagrams.md](arch/diagrams/index_diagrams.md) | Architecture diagrams and visual explanations. |
-| Architecture resources | [arch/resources/index_arch_resources.md](arch/resources/index_arch_resources.md) | Supporting architecture assets. |
 | Epics | [epics/index_epics.md](epics/index_epics.md) | Concept/design breakdown by phase and capability. |
+| Phase 1 overview | [epics/p1-overview.md](epics/p1-overview.md) | Depth-first learning sequence from workbench to boot-to-shell capstone. |
 | Epic resources | [epics/resources/index_epic_resources.md](epics/resources/index_epic_resources.md) | Images, PDFs, binary examples, or other assets referenced by epic docs. |
 | Project management | [pm/index_pm.md](pm/index_pm.md) | Execution coordination: milestones, tasks, subtasks, status, and acceptance evidence. |
 | PM resources | [pm/resources/index_pm_resources.md](pm/resources/index_pm_resources.md) | Supporting execution artifacts, including milestone evidence. |
@@ -103,4 +105,4 @@ The course should follow the actual project path, not a separate simplified fict
 
 ## Current Next Step
 
-The next planning step is to split Phase 1 into epics. The split should start from the bootable minimum and progress only when each milestone unlocks the next capability.
+The next planning step is to create the PM file for [Phase 1 Epic 00: Workbench and Evidence Loop](epics/epic00/p1-e00-workbench-and-evidence-loop.md). That PM plan should define the first milestone checklist for tool setup, emulator choice, evidence capture, and the bootloader decision needed before any Rust kernel code is typed.
